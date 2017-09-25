@@ -1,0 +1,69 @@
+(myvenv) C:\djangogirls>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   blog/views.py
+        modified:   mysite/urls.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        blog/templates/
+        blog/urls.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+(myvenv) C:\djangogirls>git add --all .
+warning: LF will be replaced by CRLF in blog/views.py.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in mysite/urls.py.
+The file will have its original line endings in your working directory.
+
+(myvenv) C:\djangogirls>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   blog/templates/blog/post_list.html
+        new file:   blog/urls.py
+        modified:   blog/views.py
+        modified:   mysite/urls.py
+
+
+(myvenv) C:\djangogirls>git commit -m "HTML do site modificado"
+[master b9906bb] HTML do site modificado
+ 4 files changed, 32 insertions(+), 2 deletions(-)
+ create mode 100644 blog/templates/blog/post_list.html
+ create mode 100644 blog/urls.py
+
+(myvenv) C:\djangogirls>git push
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 1.21 KiB | 309.00 KiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/pcmoraes/my-first-blog.git
+   1ca8ecb..b9906bb  master -> master
+
+(myvenv) C:\djangogirls>
+
+
+Empurre seu novo código para o PythonAnywhere e recarregue o seu aplicativo web
+
+Abra a [página de consoles de PythonAnywhere] (https://www.pythonanywhere.com/consoles/) e vá para o seu console Bash (ou inicie um novo). Em seguida, execute:
+
+command-line
+$ cd ~/my-first-blog
+$ git pull
+[...]
+E veja seu código sendo baixado. Se você deseja verificar se já chegou, pode ir para a Files tab e ver seu código no PythonAnywhere.
+
+Finalmente, pule para a Web tab e aperte Reload em seu aplicativo web.
+Sua atualização deve estar ao vivo! Vá em frente e atualize seu site no navegador. As alterações devem ser visíveis :)
