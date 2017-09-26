@@ -67,3 +67,19 @@ E veja seu código sendo baixado. Se você deseja verificar se já chegou, pode 
 
 Finalmente, pule para a Web tab e aperte Reload em seu aplicativo web.
 Sua atualização deve estar ao vivo! Vá em frente e atualize seu site no navegador. As alterações devem ser visíveis :)
+
+
+RESUMINDO!
+
+command-line
+$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
+Então, em um console Bash do PythonAnywhere:
+
+command-line
+$ cd my-first-blog
+$ git pull
+[...]
